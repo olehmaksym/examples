@@ -2,7 +2,6 @@ const button = document.querySelector('button');
 
 button.addEventListener('click', creteTable);
 
-console.log('hey');
 function creteTable() {
   const users = createUsers(20);
 
