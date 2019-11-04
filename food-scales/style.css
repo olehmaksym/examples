@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 8px;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#products > div {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #444;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#products > div > h2 {
+  font-size: 18px;
+}
+
+#products > div > p {
+  color: #444;
+}
+
+#products > div:hover { background: lightgreen;}
+
+.calc {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.calc > div {
+  flex-basis: 33%;
+  padding: 8px;
+  border: 2px solid royalblue;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.calc > div > span {font-size: 24px }
+
+#add-pr {
+  background-color: yellowgreen;
+  padding: 0.5em 2em;
+  font-size: 20px;
+}
+
+#product-weight::after { content: 'кг'}
+#price-per-kg::after { content: '₴/кг'}
+#total-price::after { content: '₴'}
